@@ -305,12 +305,12 @@ iex(13)> Enum.map([1, 2, 3], fn x -> x + 1 end)
           <p>Similar to Unix pipe</p>
           <p>Takes output of first function and passes as first argument to next function</p>
           <pre><code>
-iex(13)> Enum.map([1, 2, 3], fn x -> x + 1 end) |> Enum.take(1)
-[2]
+iex(13)> [1, 2, 3] |> Enum.take(1)
+[1]
 
 # equivalent to
-list = Enum.map([1, 2, 3], fn x -> x + 1 end)
-Enum.take(list, 1)
+iex(14)> Enum.take([1, 2, 3], 1)
+[1]
           </code></pre>
         </section>
 
@@ -508,11 +508,11 @@ end
           <h2>Exercise 6</h2>
           <p>Let's write FizzBuzz!</p>
           <ol>
-            <li>Write multiple versions of the function <code>fizzbuzz</code></li>
-            <li>If called with a variable of <code>3</code>, return <code>"Fizz"</code></li>
-            <li>If called with a variable of <code>5</code>, return <code>"Buzz"</code></li>
-            <li>If called with a variable of <code>3</code> and <code>5</code>, return <code>"FizzBuzz"</code></li>
-            <li>If called with anything else, simply return what was passed in</li>
+            <li>Write multiple versions of the function <code>fizzbuzz(n)</code></li>
+            <li>If <code>n</code> is divisible by <code>3</code>, return <code>"Fizz"</code></li>
+            <li>If <code>n</code> is divisible by <code>5</code>, return <code>"Buzz"</code></li>
+            <li>If <code>n</code> is divisible by <code>3</code> and <code>5</code>, return <code>"FizzBuzz"</code></li>
+            <li>If <code>n</code> doesn't match any case above, simply return what was passed in</li>
           </ol>
           <p>Uncomment and run tests with <code>mix test</code>.</p>
           <p>Hint: To check a remainder use <code>rem(number, 3)</code></p>
