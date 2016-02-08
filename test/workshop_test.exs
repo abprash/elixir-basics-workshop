@@ -47,8 +47,11 @@ defmodule WorkshopTest do
   #
   # test "fizzbuzz" do
   #   assert W.fizzbuzz(3) == "Fizz"
+  #   assert W.fizzbuzz(6) == "Fizz"
   #   assert W.fizzbuzz(5) == "Buzz"
+  #   assert W.fizzbuzz(10) == "Buzz"
   #   assert W.fizzbuzz(15) == "FizzBuzz"
+  #   assert W.fizzbuzz(225) == "FizzBuzz"
   #   assert W.fizzbuzz("a") == "a"
   # end
   #
